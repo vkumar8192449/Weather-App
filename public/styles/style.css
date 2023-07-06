@@ -1,0 +1,174 @@
+/* CSS for the navbar */
+.navbar {
+    background-color: #0d6efd;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    margin-right: 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#rotate {
+    animation: rotation 2s infinite linear;
+    display: inline-block;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.navbar-link {
+    padding: 0px 6px;
+    margin-right: 15px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* CSS for the front page */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    /* height: fit-content; */
+}
+
+.left-section {
+    width: 100%;
+    max-width: 500px;
+    padding: 0 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.right-section {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .left-section,
+    .right-section {
+        width: 45%;
+        max-width: none;
+    }
+}
+
+/* CSS for the footer */
+.footer {
+    background-color: #252525;
+    padding-top: 10px;
+    letter-spacing: 0.75px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* CSS for the fancy search box */
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.search-input {
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    outline: none;
+    width: 100%;
+}
+
+.search-button {
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #0a58ca;
+}
+
+/* CSS for the section */
+.section {
+    text-align: center;
+    padding: 20px;
+}
+
+.temperature-container {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+.temperature {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.date-time {
+    font-size: 18px;
+    color: #888888;
+}
