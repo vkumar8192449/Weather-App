@@ -27,10 +27,21 @@
       </div>
       <br />
       <div class="temperature-container">
-        <div class="temperature">--°C</div>
-        <div class="date-time">Monday, July 6, 2023 | 10:30 AM</div>
+        <div class="maindisp">
+          <div class="temperature">--°C</div>
+          <img src="" alt="" />
+        </div>
+        <div class="date-time name"></div>
+        <div class="date-time region"></div>
+        <div class="date-time country"></div>
+        <div class="date-time time"></div>
       </div>
     </section>
+
+    <div id="errorPopup" class="error-popup">
+      <p id="errmsg" class="error-popup-message">An error occurred!</p>
+    </div>
+
     <%- include('../partials/footer.ejs')%>
     <script src="js/main.js"></script>
   </body>
